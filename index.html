@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Solar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 🌌 Fondo estrellado -->
+    <div class="fondo-estrellas"></div>
+
+    <h1>Sistema Solar</h1>
+
+    <div class="sistema-solar">
+        <!-- ☀ Sol centrado -->
+        <div class="sol"></div>
+        <!-- 🪐 Órbitas y planetas se agregan desde JS -->
+    </div>
+
+    <form id="form-agregar-planeta">
+        <h2>Agregar un nuevo planeta</h2>
+        <label for="nombre">Nombre del planeta:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="distancia">Distancia de la órbita (millones de km):</label>
+        <input type="number" id="distancia" name="distancia" required>
+        <button type="submit">Agregar Planeta</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
